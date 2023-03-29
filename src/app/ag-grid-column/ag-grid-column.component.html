@@ -1,0 +1,12 @@
+<div>
+  <button (click)="onSaveState()">Save State</button>
+  <br>
+  <button (click)="onRestoreState()">Restore State</button>
+</div>
+
+<ag-grid-angular
+  style="width: 1200px;height: 700px"
+  class="ag-theme-alpine"
+  [gridOptions]="gridOptions"
+>
+</ag-grid-angular>

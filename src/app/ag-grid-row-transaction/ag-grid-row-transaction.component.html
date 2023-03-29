@@ -1,0 +1,8 @@
+<button (click)="onAddItems()">Add Items</button>
+<button (click)="onUpdateItems()">Update Items</button>
+<button (click)="removeSelected()">Remove Items</button>
+<ag-grid-angular
+  style="width: 900px; height: 700px"
+  class="ag-theme-alpine"
+  [gridOptions]="gridOptions"
+></ag-grid-angular>

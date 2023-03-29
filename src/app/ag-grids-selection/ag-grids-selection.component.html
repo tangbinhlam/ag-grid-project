@@ -1,0 +1,13 @@
+<input [formControl]="filterInput" >
+<br>
+{{ filterInput.value}}
+
+<ag-grid-angular
+  style="width: 1000px; height: 510px"
+  class="ag-theme-alpine"
+  [rowData]="data$ | async"
+  [gridOptions]="gridOptions"
+  (gridReady)="onGridReady($event)"
+>
+</ag-grid-angular>
+<button (click)="selectAllAmerican()">Select all</button>
